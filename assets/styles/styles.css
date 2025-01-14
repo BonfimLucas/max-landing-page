@@ -17,10 +17,13 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: #020228;
+    background-color: #02021bcf;
     align-items: center;
     padding: 1em;
     gap: 1em;
+    position: fixed;
+    width: 95vw;
+    z-index: 10;
 }
 
 header nav{
@@ -45,24 +48,60 @@ main{
 }
 #section-one{
     text-align: center;
-    margin-top: 2em;
+    margin-top: 6em;
     display: flex;
     flex-direction: column;
     background: linear-gradient(#171618  40%, #53048728, #020228);
-    padding: 1em;
+    padding: 1.5em;
     color: white;
     gap: 0.1em;
 }
 
 
 #section-one nav ul{
-    padding: 1em;
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
+}
+
+#card-one{
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #2e1b52b8 ,#020228);
+    margin: 1em 1em;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 1em;
+}
+
+#card-one ul{
+    margin: 2em 0em;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+    font-weight: 400;
+}
+
+#card-one-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0em auto;
+    text-align: center;
+}
+
+#new-universes{
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    color: white;
 }
  
 
@@ -99,6 +138,7 @@ main{
     font-size: 2.3em;
     position: relative;
     top: -0.2em;
+    
 }
 
 #section-one #divisoria{
@@ -155,4 +195,51 @@ main{
     background-color: #602a7b;
 }
 
+#card-one-price p{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#card-one-price #price{
+    color: rgb(255, 3, 238);
+    font-size: 1.2em;
+}
+
+#card-one-price p span{
+    font-style: italic;
+    font-size: 0.7em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.525);
+}
+
+#plus{
+    font-size: 1.5em;
+    margin-right: 0.3em;
+}
+
+#card-one button{
+    margin-top: 6em;
+    height: 4em;
+    border-radius: 30px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    background: linear-gradient(
+        26deg,
+        #b535f6,
+        #9b34ef,
+        #490cb0 50% 
+        
+    );
+
+    cursor: pointer;
+}
+
+#new-universes h2{
+    width: 10em;
+    margin: 3em auto 1em auto;
+}
 
