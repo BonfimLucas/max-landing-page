@@ -102,8 +102,29 @@ main{
     text-align: center;
     font-family: "Quicksand", sans-serif;
     color: white;
+    margin: 1em auto;
+    flex-wrap: nowrap;
 }
  
+#new-universes-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    gap: 1.3em;
+    overflow: scroll;
+    animation: 35s slide infinite linear;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    
+}
+
+
+#new-universes-cards img{
+    height: 25em;
+    
+}
 
 #btn-assine-agora{
     display: flex;
@@ -243,3 +264,17 @@ main{
     margin: 3em auto 1em auto;
 }
 
+#new-universes-cards::-webkit-scrollbar{
+    
+}
+
+@keyframes scrolling{
+    0% {
+        transform: translateX(0);
+
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
