@@ -1,7 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 
+ 
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(
+      45deg,
+      #9b34ef 0%,
+      #490cb0 20%,
+      transparent 50%
+    );
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(
+      90deg,
+      #5516ba,
+      rgba(255, 0, 229, 0.5) 80%
+    );
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
 
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+  }
 
 *{
     margin: 0;
@@ -11,6 +53,7 @@
 
 body{
     background-color: #020228;
+
 }
 
 header{
@@ -69,7 +112,7 @@ main{
 
 #card-one{
     border-radius: 5px;
-    background: linear-gradient(to bottom, #2e1b52b8 ,#020228);
+    background: linear-gradient(to bottom, #2e1b52b8 ,#0202284e);
     margin: 1em 1em;
     font-family: "Raleway", sans-serif;
     display: flex;
@@ -263,7 +306,7 @@ footer p{
     color: white;
     font-family: "Raleway", sans-serif;
     font-size: 1.5em;
-    margin: 1em 1em;
+    margin: 0.4em 1em;
     font-weight: 500;
     text-align: center;
 }
@@ -275,7 +318,7 @@ footer p{
 
 #card-one-price #price{
     color: rgb(255, 3, 238);
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 #card-one-price p span{
@@ -362,3 +405,4 @@ footer p{
         transform: rotate(0);
     }
 }
+

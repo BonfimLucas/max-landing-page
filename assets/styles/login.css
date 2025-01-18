@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    background: url("/assets/images/background-movies-series.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: auto;
+}
+
+main div div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    background-color: rgba(211, 211, 211, 0.06);
+
+}
+
+main div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 1em auto;
+    padding: 10px 30px;
+    
+}
+
+main div h3{
+    color: white;
+    font-family: "Ralleway", sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 2em;
+}
+
+main div p{
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    text-align: left;
+    margin-top: 3em;
+    margin-left: -5em;
+    width: 10em;
+    font-weight: 100;
+}
+
+main div form input{
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    height: 2em;
+    width: 16em;
+    margin: 0em auto;
+    background-color: rgba(0, 0, 0, 0.2);;
+}
+
+main div form input:focus{
+    outline: none;
+}
+
+main form div{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    text-align: left;
+    margin-left: -1em;
+    justify-content: center;
+    align-items: center;
+}
+
+main div form div button{
+    font-family: "Raleway", sans-serif;
+    width: 12em;
+    height: 3em;
+    border-radius: 25px;
+    color: white;
+    background: linear-gradient(
+        26deg,
+        #b535f6,
+        #9b34ef,
+        #490cb0 50% 
+        
+    );
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    margin-left: 1em;
+}
+
+main div form div p{
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+main div form div p a{
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    color: #9b34ef;
+    font-weight: 700;
+}
+
+main div form input:invalid{
+    border-color: rgba(255, 0, 0, 0.408);
+    transition: 0.5;
+}
+
+
+@media (min-width: 558px) {
+   main div, main div div{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+   } 
+
+   main div div{
+     align-items: flex-start;
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+   main div div p{
+    margin: 1em 1em;
+   }
+
+   main div div h3{
+    margin: 1em 0.4em;
+   }
+
+   main div div form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1em -3em;
+    width: 90%;
+   }
+
+   main div div form input{
+    width: 85%;
+   }
+
+   main div div form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1em ;
+   }
+
+   
+
+   
+
+
+}
